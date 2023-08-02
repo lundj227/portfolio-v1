@@ -21,6 +21,7 @@ nav{
 
 nav:hover{
     background-color: rgba(72, 74, 77, 0.804);
+    color: rgba(0, 10, 21, 0.804);
 }
 
 nav h2{
@@ -38,7 +39,7 @@ nav ul{
 
 nav ul a{
     text-decoration: none;
-    color: rgb(0, 10, 21);
+    color: rgba(0, 10, 21, 0.506);
 }
 
 nav ul a:hover{
