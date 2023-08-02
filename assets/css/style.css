@@ -1,0 +1,45 @@
+*{
+    font-size: 100%;
+}
+
+header{
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+header h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 200%;
+    border-color: solid black 20px;
+    align-self: center;
+}
+
+
+nav{
+    padding: 20px;
+    background-color: rgba(86, 132, 206, 0.247);
+}
+
+nav:hover{
+    background-color: rgba(86, 132, 206, 0.873);
+}
+
+nav ul{
+    text-align: center;
+    font-size: 175%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#avatar{
+    width: 50px;
+}
+
+#about-me img {
+    width: 100px;
+}
+
+section{
+    min-height: 100vh;
+}
