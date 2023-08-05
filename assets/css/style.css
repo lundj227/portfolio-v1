@@ -1,15 +1,29 @@
 *{
     font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 html{
     background-color: rgb(163, 170, 173);
 }
 
+:root{
+    --section-header-size: 200%;
+}
+
+/* Header Styling */
 header{
     min-height: 15vh;
 }
 
+@media screen and (max-width: 750px){
+    nav ul{
+        flex-direction: column;
+    }
+    .biography h2{
+        margin-top: 100px;
+    }
+}
 
 nav{
     padding: 20px;
@@ -17,11 +31,12 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 nav:hover{
-    background-color: rgba(72, 74, 77, 0.804);
-    color: rgba(0, 10, 21, 0.804);
+    background-color: rgb(72, 74, 77);
+    color: rgb(0, 10, 21);
 }
 
 nav h2{
@@ -54,10 +69,110 @@ nav ul a:hover{
     width: 50px;
 }
 
-#about-me img {
-    width: 100px;
+/* About Me Section Styling */
+.biography{
+    min-height: 40vh;
 }
 
-section{
-    min-height: 100vh;
+.biography > h2{
+    font-size: var(--section-header-size);
+    margin: 10px 0 10px 20px;
+}
+
+.biography > img{
+    float: right;
+    /*width: 250px;*/
+    height: 200px;
+    margin: 0 150px 15px .5em;
+    border:10px solid rgba(230, 228, 201, 0.675);
+    border-radius: 5px;
+}
+
+.biography > p{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+/* My work section styling */
+
+#my-work{
+    margin: 0 200px;
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#first{
+    width: 800px;
+}
+
+.others{
+    width: 400px;
+}
+
+@media screen and (max-width: 1600px){
+    .others{
+        width: 260px;
+    }
+    #first{
+        width: 520px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .others{
+        width: 300px;
+    }
+    #first{
+        width: 600px;
+    }
+    
+}
+
+@media screen and (min-width: 1700px){
+    .others{
+        width: 400px;
+    }
+    #first{
+        width: 800px;
+    }
+    
+}
+
+@media screen and (max-width: 1067px){
+    .others{
+        width: 400px;
+    }
+    #first{
+        width: 400px;
+    }
+    
+}
+@media screen and (max-width: 650px){
+    .others, #first{
+        width:200px;
+    }
+}
+
+#my-work > div{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer Styling */
+
+footer{
+    background-color: aliceblue;
+
+footer > ul > li{
+    margin-left: 50px;
+}
 }

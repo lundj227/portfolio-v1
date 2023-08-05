@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack's Portfolio</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
 
-    <header id="home">
-        <nav>
+        <header id="home">
+            <nav>
+                <ul>
+                    <li><a href="#home">Jack's Portfolio</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#my-work">My Work</a></li>
+                    <li><a href="#contact-me" id="final-item">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section class="biography" id="about-me">
+                <h2>Biography</h2>
+                    <img id = "about-me-photo" src="./assets/images/self-image.jpeg" alt="recent photo of myself">
+                    <p>My name is Jack Lund I am a 19 year old Web developer from California, and I am currently studying physics at the University of Oregon. Here is some Lorem text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia, vitae fuga ipsa a odio rem nam neque facere, perspiciatis quos laborum? Ipsa impedit quia fugit odit facere velit architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit, quo, consequatur vero iste soluta voluptate ipsum maiores similique voluptatibus odio unde! Libero sapiente in minima accusamus ab facilis. Veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nam maiores at beatae consectetur porro consequatur ab facere quam aliquam amet maxime reprehenderit, praesentium consequuntur dolores laudantium quia delectus libero.</p>
+            </section>
+        <h2>My Work</h2>
+            <section id="my-work">
+                <article>
+                    <h3>Nike Frontend</h3>
+                    <a href="https://www.nike.com/?cp=70525441117_search_-nike%20.com-g-19646935583-146613627060-e-c---656974645888-kwd-658584380-9032481&gclid=CjwKCAjww7KmBhAyEiwA5-PUSi1oNv8BAYfhu3h0xOidbT-cD40KFLeUtfQPu6Ky9SQKXEMTe-4HFRoCR7AQAvD_BwE&gclsrc=aw.ds"><img 
+                    id="first"
+                    src="./assets/images/nikelogo.png" 
+                    alt=""></a>
+                </article>
+                <div>
+                <article>
+                    <h3>Founder of Facebook</h3>
+                    <a href="https://www.facebook.com/"><img 
+                    class="others" 
+                    src="./assets/images/facebooklogo.webp" 
+                    alt=""></a>
+                </article>
+                <article>
+                    <h3>Inventor of iPhone</h3>
+                    <a href="https://www.apple.com/store?afid=p238%7CseIEs444j-dc_mtid_1870765e38482_pcrid_664232128449_pgrid_13945964887_pntwk_g_pchan__pexid__&cid=aos-us-kwgo-brand-apple--slid---product-"><img 
+                    class = "others" 
+                    src="./assets/images/applelogo.png" 
+                    alt=""></a>
+                </article>
+                <article>
+                    <h3>Sole Creator of ChatGPT</h3>
+                    <a><img class="others"
+                    src="./assets/images/gptlogo.png" 
+                    alt=""></a>
+                </article>
+                <article>
+                    <h3>Bard By Google</h3>
+                    <a href="https://bard.google.com/"><img 
+                    class="others"
+                    src="./assets/images/googlebard.jpeg"
+                    alt=""></a>
+                </article>
+            </div>
+            </section>
+        <footer id="contact-me">
+            <h2>Contact Me</h2>
             <ul>
-                <li><a href="#home">Jack's Portfolio</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="#contact-me" id="final-item">Contact Me</a></li>
+                <li><a href=
+                    "www.linkedin.com/in/jack-lund-722099253">
+                    LinkedIn</a>
+                </li>
+                <li><a href="https://github.com/lundj227">
+                    Github</a>
+                </li>
+                <li><a href="https://mail.google.com/">
+                    Gmail: lundj62@gmail.com</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-        <section id="about-me">
-            <h2>About Me</h2>
-                <img id = "about-me-photo" src="./assets/images/self-image.jpeg" alt="recent photo of myself">
-                <p>My name is Jack Lund I am a 19 year old Web developer from California, and I am currently studying physics at the University of Oregon.</p>
-        </section>
-        <section id="my-work">
-            <h2>My Work</h2>
-        </section>
-    <footer id="contact-me">
-        <h2>Contact Me</h2>
-    </footer>
+        </footer>
 
-</body>
+    </body>
 </html>
